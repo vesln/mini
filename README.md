@@ -25,7 +25,7 @@ t('Async test', function(done) {
 Then:
 
 ```
-$ node mytest.js
+$ node my-test.js
 ```
 
 Output:
