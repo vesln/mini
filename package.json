@@ -1,0 +1,22 @@
+{
+  "name": "mini",
+  "version": "0.0.1",
+  "description": "Mini, node-able test runner",
+  "main": "index.js",
+  "homepage": "https://github.com/vesln/mini",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vesln/mini"
+  },
+  "author": "Veselin Todorov <hi@vesln.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nixt": "0.0.4"
+  },
+  "dependencies": {
+    "hydro": "~0.6.1"
+  }
+}
