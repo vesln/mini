@@ -1,9 +1,9 @@
 var t = require('../..')();
 
-t('NOT OK', function() {
+t('NOT OK sync', function() {
   throw new Error('fail');
 });
 
-t('NOT OK', function(done) {
+t('NOT OK async', function(done) {
   done(new Error('fail'));
 });

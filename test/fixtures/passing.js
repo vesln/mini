@@ -1,6 +1,6 @@
 var t = require('../..')();
 
-t('OK', function() {
+t('OK sync', function() {
 
 });
 
