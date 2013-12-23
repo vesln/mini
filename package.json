@@ -14,9 +14,9 @@
   "author": "Veselin Todorov <hi@vesln.com>",
   "license": "MIT",
   "devDependencies": {
-    "nixt": "0.0.4"
+    "nixt": "*"
   },
   "dependencies": {
-    "hydro": "~0.6.1"
+    "hydro": "*"
   }
 }

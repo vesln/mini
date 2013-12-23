@@ -12,9 +12,10 @@ module.exports = function() {
   var runner = new Hydro;
   var failed = [];
   var total = 0;
+  var suite = null;
 
   runner.on('post:test', function(test) {
-    if (test.failed) failed.push(test);
+    if (test.status === 'failed') failed.push(test);
     total++;
   });
 
@@ -38,9 +39,10 @@ module.exports = function() {
     });
   });
 
-  runner.addSuite('mini');
+  suite = runner.addSuite('mini');
 
   return function() {
-    runner.addTest.apply(runner, arguments);
+    var test = runner.createTest.apply(runner, arguments);
+    suite.addTest(test);
   };
 };
