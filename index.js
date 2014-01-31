@@ -1,15 +1,15 @@
 /**
- * External dependencies.
+ * Dependencies.
  */
 
-var Hydro = require('hydro');
+var hydro = require('hydro');
 
 /**
  * Primary export.
  */
 
 module.exports = function() {
-  var runner = new Hydro;
+  var runner = hydro();
   var failed = [];
   var total = 0;
   var suite = null;
@@ -24,7 +24,7 @@ module.exports = function() {
       console.log('Tests: %d\n', total);
 
       if (!failed.length) {
-        console.log('ok');
+        console.log('OK');
         process.exit();
       }
 
@@ -34,7 +34,7 @@ module.exports = function() {
         console.error();
       });
 
-      console.error('not ok');
+      console.error('NOT OK');
       process.exit(failed.length);
     });
   });

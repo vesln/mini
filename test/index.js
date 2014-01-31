@@ -5,7 +5,7 @@ t('Passing tests', function(done) {
   cli()
   .run('node test/fixtures/passing')
   .stdout(/Tests: 2/)
-  .stdout(/ok/)
+  .stdout(/OK/)
   .code(0)
   .end(done);
 });
@@ -14,7 +14,7 @@ t('Failing tests', function(done) {
   cli()
   .run('node test/fixtures/failing')
   .stdout(/Tests: 2/)
-  .stderr(/not ok/)
+  .stderr(/NOT OK/)
   .code(2)
   .end(done);
 });
