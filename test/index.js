@@ -4,7 +4,7 @@ var cli = require('nixt');
 t('Passing tests', function(done) {
   cli()
   .run('node test/fixtures/passing')
-  .stdout(/Tests: 2/)
+  .stdout(/Tests: 3/)
   .stdout(/OK/)
   .code(0)
   .end(done);

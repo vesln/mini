@@ -45,5 +45,6 @@ module.exports = function() {
   return function() {
     var test = runner.createTest.apply(runner, arguments);
     suite.addTest(test);
+    return test;
   };
 };
