@@ -3,6 +3,7 @@
  */
 
 var hydro = require('hydro');
+var color = require('eyehurt');
 
 /**
  * Primary export.
@@ -24,7 +25,7 @@ module.exports = function() {
       console.log('Tests: %d\n', total);
 
       if (!failed.length) {
-        console.log('OK');
+        console.log(color('OK', 'green'));
         process.exit();
       }
 
@@ -34,7 +35,7 @@ module.exports = function() {
         console.error();
       });
 
-      console.error('NOT OK');
+      console.error(color('NOT OK', 'red'));
       process.exit(failed.length);
     });
   });

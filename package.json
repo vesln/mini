@@ -17,6 +17,7 @@
     "nixt": "*"
   },
   "dependencies": {
-    "hydro": "*"
+    "hydro": "*",
+    "eyehurt": "0.0.1"
   }
 }
