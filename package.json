@@ -1,6 +1,6 @@
 {
   "name": "mini",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Mini, node-able test runner",
   "preferGlobal": true,
   "main": "lib/mini.js",
