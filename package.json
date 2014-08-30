@@ -2,6 +2,7 @@
   "name": "mini",
   "version": "0.0.2",
   "description": "Mini, node-able test runner",
+  "preferGlobal": true,
   "main": "lib/mini.js",
   "homepage": "https://github.com/vesln/mini",
   "scripts": {
@@ -13,6 +14,10 @@
   },
   "author": "Veselin Todorov <hi@vesln.com>",
   "license": "MIT",
+  "bin": {
+    "mini": "bin/mini",
+    "_mini": "bin/_mini"
+  },
   "devDependencies": {
     "nixt": "*"
   },
