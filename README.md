@@ -2,21 +2,18 @@
 
 # mini
 
-Mini, node-able test runner, created to showcase the abilities of
-[Hydro](https://github.com/hydrojs/hydro)
+Minimalistic test runner for Node.js
 
 ## Usage
 
 ```js
-// my-test.js
+// test/my-test.js
 
-var t = require('mini')();
-
-t('Sync test', function() {
+test('Sync test', function() {
   // do sync stuff
 });
 
-t('Async test', function(done) {
+test('Async test', function(done) {
   // do async stuff
   done();
 });
@@ -25,15 +22,7 @@ t('Async test', function(done) {
 Then:
 
 ```
-$ node my-test.js
-```
-
-Output:
-
-```
-Tests: 2
-
-OK
+$ mini
 ```
 
 ## Installation
