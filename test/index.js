@@ -1,19 +1,23 @@
-var t = require('..')();
 var cli = require('nixt');
+var join = require('path').join;
+var mini = join(__dirname, '..', 'bin', 'mini') + ' ';
+var cwd = join(__dirname, '..');
 
-t('Passing tests', function(done) {
+test('Passing tests', function(done) {
   cli()
-  .run('node test/fixtures/passing')
-  .stdout(/Tests: 3/)
+  .cwd(cwd)
+  .base(mini)
   .stdout(/OK/)
   .code(0)
+  .run('test/fixtures/passing.js')
   .end(done);
 });
 
-t('Failing tests', function(done) {
+test('Failing tests', function(done) {
   cli()
-  .run('node test/fixtures/failing')
-  .stdout(/Tests: 2/)
+  .cwd(cwd)
+  .base(mini)
+  .run('test/fixtures/failing.js')
   .stderr(/NOT OK/)
   .code(2)
   .end(done);

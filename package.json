@@ -2,10 +2,10 @@
   "name": "mini",
   "version": "0.0.2",
   "description": "Mini, node-able test runner",
-  "main": "index.js",
+  "main": "lib/mini.js",
   "homepage": "https://github.com/vesln/mini",
   "scripts": {
-    "test": "node test"
+    "test": "bin/mini"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,10 @@
     "nixt": "*"
   },
   "dependencies": {
-    "hydro": "*",
-    "eyehurt": "0.0.1"
+    "argvee": "^0.1.1",
+    "eyehurt": "0.0.1",
+    "fload": "^0.1.0",
+    "tryc": "^0.1.0",
+    "v8-argv": "^0.2.0"
   }
 }
